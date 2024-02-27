@@ -3,21 +3,21 @@ package co.edu.sena;
 import java.util.Scanner;
 
 /**
- * Programa para sumar dos números ingresados por el usuario.
+ * Programa para calcular el área y el perímetro de un cuadrado.
  */
 public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Ingrese el primer número: ");
-        int numero1 = scanner.nextInt();
+        System.out.print("Ingrese la longitud del lado del cuadrado: ");
+        double lado = scanner.nextDouble();
 
-        System.out.print("Ingrese el segundo número: ");
-        int numero2 = scanner.nextInt();
+        double area = Math.pow(lado, 2);
 
-        int suma = numero1 + numero2;
+        double perimetro = 4 * lado;
 
-        System.out.println("La suma de " + numero1 + " y " + numero2 + " es: " + suma);
+        System.out.println("El área del cuadrado es: " + area);
+        System.out.println("El perímetro del cuadrado es: " + perimetro);
 
         scanner.close();
     }
